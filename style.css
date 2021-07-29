@@ -1,0 +1,101 @@
+*{
+    /* background-color: #577590; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.headertitle{
+    display: grid;
+    place-items: center center;
+    text-align: center;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+
+#container{
+    /* width: 99vw; */
+    /* height: 100vw; */
+    /* margin: 0 auto; */
+    /* background-color: whitesmoke; */
+    /* outline: 3px solid white; */
+    display: grid;
+    /* grid-template-columns: [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end]; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10vh 30vh 200vh 1fr;
+    grid-template-areas:
+    /* "box box box" */
+    "header header header"
+    "navbar navbar navbar"
+    "main main main"
+    "footer footer footer"
+    /* "footer footer footer" */
+    /* "header header header"
+    "navbar navbar navbar"
+    "main main main"
+    "footer footer footer"; */
+}
+
+.box{
+    background: #333;
+    padding: 5rem;
+    grid-area: box;
+}
+
+.header{
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #333;
+    background-color: rgb(246, 250, 2);
+    box-shadow: 0px 0px 0px 1px #F3CA40;
+    /* display: grid; */
+    /* place-items: center center; */
+    grid-area: header;
+}
+
+.navbar{
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #333;
+    background-color: #f3c940;
+    /* box-shadow: 0px 0px 0px 1px #F3CA40; */
+    /* display: grid; */
+    /* place-items: center center; */
+    grid-area: navbar;
+}
+.main{
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #333;
+    background-color: #F2A541;
+    box-shadow: 0px 0px 0px 1px #F2A541;
+    /* display: grid; */
+    /* place-items: center center; */
+    grid-area: main;
+    
+}
+
+.banner-text{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+.footer{
+    padding: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #333 ;
+    background-color: #D78A76;
+    box-shadow: 0px 0px 0px 1px #D78A76;
+    /* display: grid;
+    place-items: center center; */
+    grid-area: footer;
+}
+
